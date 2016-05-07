@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="bb\gsbBundle\Entity\Fichefraisforfait" table="FicheFraisForfait">
+    <id name="idfichefrais" type="integer" column="idFicheFrais">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nomvisiteur" type="string" column="nomVisiteur" length="30" nullable="true"/>
+    <field name="prenomvisiteur" type="string" column="prenomVisiteur" length="30" nullable="true"/>
+    <field name="date" type="integer" column="date" nullable="true"/>
+    <field name="mois" type="integer" column="mois" nullable="true"/>
+    <field name="annee" type="integer" column="annee" nullable="true"/>
+    <field name="repasmidi" type="integer" column="repasMidi" nullable="true"/>
+    <field name="nuitee" type="integer" column="nuitee" nullable="true"/>
+    <field name="etape" type="integer" column="etape" nullable="true"/>
+    <field name="km" type="integer" column="km" nullable="true"/>
+    <field name="prixrepasmidi" type="float" column="prixRepasMidi" precision="10" scale="0" nullable="true"/>
+    <field name="prixnuitee" type="float" column="prixNuitee" precision="10" scale="0" nullable="true"/>
+    <field name="prixetape" type="float" column="prixEtape" precision="10" scale="0" nullable="true"/>
+    <field name="prixkm" type="float" column="prixKm" precision="10" scale="0" nullable="true"/>
+  </entity>
+</doctrine-mapping>

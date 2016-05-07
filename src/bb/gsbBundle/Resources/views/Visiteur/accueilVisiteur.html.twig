@@ -1,0 +1,8 @@
+Nous sommes le {{ "now"|date("d/m/Y") }}
+<h1> Bienvenue {{app.session.get('prenom') }} 
+                {{app.session.get('nom') }}</h1>
+
+<a href="{{ path('gestion_frais') }}">Nouvelle fiche de frais</a><br/>
+<a href="{{ path('frais_hors_forfait') }}">Nouvelle fiche frais hors forfait</a><br/>
+<a href="{{ path('consulter_fiche_frais_forfait') }}">Consulter fiche de frais</a><br/>
+<a href="{{ path('consulter_fiche_frais_hors_forfait') }}">Consulter fiche de frais hors forfait</a><br/>

@@ -1,0 +1,6 @@
+Nous sommes le {{ "now"|date("d/m/Y") }}
+<h1> Bienvenue {{app.session.get('prenom') }} 
+                {{app.session.get('nom') }}</h1>
+
+<h2>Frais hors forfait</h2>
+{{form(formFicheFraisHorsForfait) }}

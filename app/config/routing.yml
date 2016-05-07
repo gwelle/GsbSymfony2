@@ -1,0 +1,5 @@
+bbgsb:
+    resource: "@bbgsbBundle/Resources/config/routing.yml"
+    prefix:   /
+    
+

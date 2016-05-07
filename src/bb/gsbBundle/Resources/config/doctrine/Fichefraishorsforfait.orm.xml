@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="bb\gsbBundle\Entity\Fichefraishorsforfait" table="FicheFraisHorsForfait">
+    <id name="idfichefraishorsforfait" type="integer" column="idFicheFraisHorsForfait">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="date" type="date" column="date" nullable="true"/>
+    <field name="libelle" type="string" column="libelle" length="200" nullable="true"/>
+    <field name="qte" type="integer" column="qte" nullable="true"/>
+    <field name="prixunitaire" type="float" column="prixUnitaire" precision="10" scale="0" nullable="true"/>
+    <field name="montant" type="float" column="montant" precision="10" scale="0" nullable="true"/>
+    <field name="nomvisiteur" type="string" column="nomVisiteur" length="50" nullable="true"/>
+    <field name="prenomvisiteur" type="string" column="prenomVisiteur" length="50" nullable="true"/>
+  </entity>
+</doctrine-mapping>

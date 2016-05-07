@@ -1,0 +1,4 @@
+services:
+#    bbgsb.example:
+#        class: bb\gsbBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

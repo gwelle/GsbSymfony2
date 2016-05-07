@@ -1,0 +1,49 @@
+    <table>
+<tr>
+<th>Date</th>
+<th>Nombre repas Midi</th>
+<th>Prix repas Midi</th>
+<th>Nombre nuitee</th>
+<th>Prix nuitee</th>
+<th>Nombre etape</th>
+<th>Prix etapes</th>
+<th>Nombre km</th>
+<th>Prix kms</th>
+<th> </th>
+<th> </th>
+
+</tr>
+
+{% for fiche in ficheFraisForfait %}
+ 
+<tr>
+    
+   
+<td>{{fiche.date}}/{{fiche.mois}}/{{fiche.annee}}</td>
+
+<td><center>{{fiche.repasMidi}}</center></td>
+<td><center>{{fiche.prixRepasMidi}}€</center></td>
+<td><center>{{fiche.nuitee}}</center></td>
+<td><center>{{fiche.prixNuitee}}€</center></td>
+<td><center>{{fiche.etape}}</center></td>
+<td><center>{{fiche.prixEtape}}€</center></td>
+<td><center>{{fiche.km}}</center></td>
+<td><center>{{fiche.prixKm}}€</center></td> 
+<td><center>  <form action="{{ path('modifier_fiche_frais_forfait', {'idfichefrais': fiche.idFicheFrais })}}">
+  <input type="submit" value="Mettre à jour">
+  </form></center></td> 
+  
+  <td><center> <form action="{{ path('supprimer_fiche_frais_forfait', {'idfichefrais': fiche.idFicheFrais })}}">
+  <input type="submit" value="Supprimer"> </form></center></td> 
+    
+
+</tr>
+
+
+{% endfor %}
+
+
+</table> 
+       
+
+  

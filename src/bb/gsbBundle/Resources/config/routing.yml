@@ -1,0 +1,40 @@
+formulaire_connexion:
+    path:  /login/
+    defaults: {_controller: bbgsbBundle:Visiteur:index }
+    
+gestion_frais :
+    path: /nouveau_frais/
+    defaults: {_controller: bbgsbBundle:Visiteur:FraisForfait }
+    
+accueil_visiteur:
+    path: /visiteur_home
+    defaults: {_controller: bbgsbBundle:Visiteur:accueilGestionnaire }
+    
+frais_hors_forfait:
+    path: /fraishorsforfait
+    defaults: {_controller: bbgsbBundle:Visiteur:fraisHorsForfait }
+    
+consulter_fiche_frais_forfait:
+    path: /consulterfichefraisforfait
+    defaults: {_controller: bbgsbBundle:Visiteur:consulterFraisForfait }
+    
+modifier_fiche_frais_forfait:
+    path: /modifierfichefraisforfait/{idfichefrais}
+    defaults: {_controller: bbgsbBundle:Visiteur:modifierFicheFraisForfait }
+    
+supprimer_fiche_frais_forfait:
+    path: /supprimerfichefraisforfait/{idfichefrais}
+    defaults: {_controller: bbgsbBundle:Visiteur:supprimerFicheFraisForfait }
+    
+consulter_fiche_frais_hors_forfait:
+    path: /consulterfichefraishorsforfait
+    defaults: {_controller: bbgsbBundle:Visiteur:consulterFraisHorsForfait }
+    
+modifier_fiche_frais_hors_forfait:
+    path: /modifierfichefraishorsforfait/{idfichefraishorsforfait}
+    defaults: {_controller: bbgsbBundle:Visiteur:modifierFicheFraisHorsForfait }
+    
+supprimer_fiche_frais_hors_forfait:
+    path: /supprimerfichefraishorsforfait/{idfichefraishorsforfait}
+    defaults: {_controller: bbgsbBundle:Visiteur:supprimerFicheFraisHorsForfait }
+    
